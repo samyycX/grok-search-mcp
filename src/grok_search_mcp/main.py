@@ -13,7 +13,8 @@ def main() -> None:
         mcp.run(
             transport="streamable-http",
             host=config.MCP_HOST,
-            port=config.MCP_PORT
+            port=config.MCP_PORT,
+            stateless_http=True
         )
     else:
         mcp.run(transport="stdio")

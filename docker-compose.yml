@@ -1,5 +1,6 @@
 services:
   grok-search-mcp:
+    container_name: grok-search-mcp
     build: .
     ports:
       - "${MCP_PORT:-8000}:8000"
@@ -10,3 +11,9 @@ services:
       - MCP_HOST=0.0.0.0
       - MCP_PORT=8000
     restart: unless-stopped
+    networks:
+      - grok_search_mcp
+
+networks:
+  grok_search_mcp:
+    driver: bridge
