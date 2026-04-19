@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "grok-search-mcp"
+version = "0.1.0"
+description = "MCP server providing web search via Grok (xAI)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp[cli]>=1.0.0",
+    "xai-sdk>=0.0.1",
+]
+
+[project.scripts]
+grok-search-mcp = "grok_search_mcp.main:main"
