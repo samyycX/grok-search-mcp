@@ -11,7 +11,7 @@ def main() -> None:
 
     if transport == "http":
         mcp.run(
-            transport="http",
+            transport="streamable-http",
             host=config.MCP_HOST,
             port=config.MCP_PORT,
             streamable_http_path=config.MCP_PATH,
