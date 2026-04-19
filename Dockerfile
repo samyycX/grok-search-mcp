@@ -10,7 +10,6 @@ RUN pip install --no-cache-dir .
 ENV MCP_TRANSPORT=http
 ENV MCP_HOST=0.0.0.0
 ENV MCP_PORT=8000
-ENV MCP_PATH=/mcp
 
 EXPOSE 8000
 

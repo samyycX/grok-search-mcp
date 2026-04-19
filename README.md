@@ -30,7 +30,6 @@ cp .env.example .env
 | `MCP_TRANSPORT` | No | `stdio` | `stdio` for local use, `http` for network/Docker |
 | `MCP_HOST` | No | `0.0.0.0` | Bind address for HTTP mode |
 | `MCP_PORT` | No | `8000` | Port for HTTP mode |
-| `MCP_PATH` | No | `/mcp` | HTTP endpoint path |
 
 ## Local Usage
 
