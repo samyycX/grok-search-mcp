@@ -9,7 +9,7 @@ description = "MCP server providing web search via Grok (xAI)"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "mcp[cli]>=1.0.0",
+    "fastmcp",
     "xai-sdk>=0.0.1",
 ]
 
